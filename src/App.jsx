@@ -15,7 +15,7 @@ function App() {
     <div>
       <Navbar/>
       <Background heroCount={heroCount} playStatus={playStatus}/>
-      <Hero heroCount={heroCount} setHeroCount={setHeroCount} playStatus={playStatus} setPlayStatus={setPlayStatus} data={heroData}/>
+      <Hero heroCount={heroCount} setHeroCount={setHeroCount} playStatus={playStatus} setPlayStatus={setPlayStatus} data={heroData[heroCount]}/>
     </div>
   );
 }

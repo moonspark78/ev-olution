@@ -17,10 +17,10 @@ export const Hero = ({
         <p>{data.text1}</p>
         <p>{data.text2}</p>
       </div>
-      <div className="hero-explore">
+      {/* <div className="hero-explore">
         <p>Explore the features</p>
         <img src={arrow_btn} alt="" />
-      </div>
+      </div> */}
       <div className="hero-dot-play">
         <ul className="hero-dots">
           <li
