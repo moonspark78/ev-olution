@@ -4,6 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  
 
   return (
 

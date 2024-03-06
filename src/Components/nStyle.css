@@ -32,12 +32,48 @@
 
 .nav-menu-toggle {
   display: none; /* Par défaut, l'icône du menu est masquée */
+
 }
 
 @media screen and (max-width: 767px){
-    .nav-menu{
+   
+   /*  .nav-menu{
         display: none;
+        
     }
+    .nav-menu-toggle {
+        display: flex; 
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+    .nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    } */
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        background-color: white; /* Fond blanc pour le menu mobile */
+        position: absolute; /* Position absolue pour couvrir toute la page */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px; /* Ajoutez un espacement pour le contenu */
+        z-index: 1000; /* Assurez-vous que le menu apparaît au-dessus du contenu */
+    }
+
+    .nav-menu li {
+        color: #000; /* Couleur du texte des éléments li */
+    }
+
     .nav-menu-toggle {
         display: flex; /* Affiche l'icône du menu */
         align-items: center;
@@ -45,11 +81,5 @@
         color: white;
         font-size: 24px;
     }
-
-   /*  .nav-menu-mobile {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; 
-    }
- */
+ 
 }
