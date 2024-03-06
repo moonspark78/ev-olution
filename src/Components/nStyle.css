@@ -29,3 +29,27 @@
     background: #fff;
     color: #262626;
 }
+
+.nav-menu-toggle {
+  display: none; /* Par défaut, l'icône du menu est masquée */
+}
+
+@media screen and (max-width: 767px){
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu-toggle {
+        display: flex; /* Affiche l'icône du menu */
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+   /*  .nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+ */
+}
